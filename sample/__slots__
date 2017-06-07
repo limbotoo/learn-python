@@ -1,0 +1,11 @@
+class student(object):
+  __slots__=('name','age')  #给name,age做限制
+  
+s=student()   #定义一个student#
+s.name='tom'   #添加属性#
+s.age=24    #添加属性#
+s.score=66   #添加属性失败，由于__slots__中没有对score进行限制#
+  #error#
+
+s.name
+s.age
